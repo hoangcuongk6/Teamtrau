@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{16869DF2-80E9-4315-853B-1D53828496AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Garco10.DataAccess.QLCV</RootNamespace>
+    <AssemblyName>Garco10.DataAccess.QLCV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Garco10.ConnectionProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\File DLL\Garco10.ConnectionProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Garco10.SystemModule">
+      <HintPath>..\..\File DLL\Garco10.SystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSCM.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\File DLL\VSCM.Base.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\clsChucVu_PhanCap.cs" />
+    <Compile Include="Classes\clsCongViec.cs" />
+    <Compile Include="Classes\clsCongViec_Comment.cs" />
+    <Compile Include="Classes\clsCongViec_Extension.cs" />
+    <Compile Include="Classes\clsCongViec_KetQua.cs" />
+    <Compile Include="Classes\clsCongViec_LichSu.cs" />
+    <Compile Include="Classes\clsCongViec_ThongBao.cs" />
+    <Compile Include="Classes\clsCongViec_ThongSo.cs" />
+    <Compile Include="Classes\clsDM_DonVi_KetQua.cs" />
+    <Compile Include="Classes\clsDM_LoaiCV.cs" />
+    <Compile Include="Classes\clsDM_LoaiCV_Extension.cs" />
+    <Compile Include="Classes\clsDM_LoaiThongBao.cs" />
+    <Compile Include="Classes\clsDM_MucDoUuTien.cs" />
+    <Compile Include="Classes\clsDM_Nhom_ChucVu.cs" />
+    <Compile Include="Classes\clsDM_ThoiGian.cs" />
+    <Compile Include="Classes\clsDM_TrangThai.cs" />
+    <Compile Include="Classes\clsDonVi_PhanCap.cs" />
+    <Compile Include="Classes\clsFTP_Files.cs" />
+    <Compile Include="Classes\clsFTP_FileType.cs" />
+    <Compile Include="Classes\clsFTP_FileType_Group.cs" />
+    <Compile Include="Classes\clsFTP_Server.cs" />
+    <Compile Include="Classes\clsCongViec_Comment_Extension.cs" />
+    <Compile Include="Classes\clsCongViec_LichSu_Extension.cs" />
+    <Compile Include="Classes\clsNhanSu.cs" />
+    <Compile Include="Classes\clsNhom.cs" />
+    <Compile Include="Classes\clsNhom_NhanSu.cs" />
+    <Compile Include="Classes\clsPhanCapNhanVien.cs" />
+    <Compile Include="Classes\clsPhanCapNhanVien_Extension.cs" />
+    <Compile Include="Classes\clsPhanCap_DonVi.cs" />
+    <Compile Include="Classes\clsPhanCap_DonVi_Extension.cs" />
+    <Compile Include="Classes\clsSoTayKinhNghiem.cs" />
+    <Compile Include="Classes\clsThongBao.cs" />
+    <Compile Include="Classes\clsThongBao_Extension.cs" />
+    <Compile Include="Classes\clsFTP_Files_Extension.cs" />
+    <Compile Include="Classes\clsCongViec_ThongSo_Extension.cs" />
+    <Compile Include="Classes\clsCongViec_ThongBao_Extension.cs" />
+    <Compile Include="Classes\clsDM_ThoiGian_Extension.cs" />
+    <Compile Include="Classes\clsChucVu_PhanCap_Extension.cs" />
+    <Compile Include="Classes\clsNhom_Extension.cs" />
+    <Compile Include="Classes\clsNhom_NhanSu_Extension.cs" />
+    <Compile Include="Classes\clsCongViec_KetQua_Extension.cs" />
+    <Compile Include="Classes\clsSoTayKinhNghiem_Extension.cs" />
+    <Compile Include="Global\clsAccessType.cs" />
+    <Compile Include="Global\FTP_FilesManager.cs" />
+    <Compile Include="Global\GlobalVariables.cs" />
+    <Compile Include="Global\HelperMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

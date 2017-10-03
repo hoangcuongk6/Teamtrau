@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E146A072-BE02-4AA9-8D14-A34FC6140E9E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Garco10.Presenter.QLCV</RootNamespace>
+    <AssemblyName>Garco10.Presenter.QLCV</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiveReports.Design6">
+      <HintPath>..\..\File DLL\ActiveReports.Design6.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Document">
+      <HintPath>..\..\File DLL\ActiveReports.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports.Viewer6">
+      <HintPath>..\..\File DLL\ActiveReports.Viewer6.dll</HintPath>
+    </Reference>
+    <Reference Include="ActiveReports6">
+      <HintPath>..\..\File DLL\ActiveReports6.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20142.844, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\File DLL\C1.Win.C1FlexGrid.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20101.33244, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\File DLL\C1.Win.C1Input.2.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.C1List.2, Version=2.1.20142.305, Culture=neutral, PublicKeyToken=6b24f8f981dbd7bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\File DLL\C1.Win.C1List.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Cryptography">
+      <HintPath>..\..\File DLL\Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=95fc6c5621878f0a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraCharts.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.Extensions, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraCharts.v12.2.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.UI, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraCharts.v12.2.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.Web, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraCharts.v12.2.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v12.2.Wizard, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraCharts.v12.2.Wizard.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDashboard.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraDashboard.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraDashboard.v12.2.Web, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraDashboard.v12.2.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\DevExpress\DXperience 12.2\Bin\Framework\DevExpress.XtraGrid.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v12.2, Version=12.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Garco10.ConnectionProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\File DLL\Garco10.ConnectionProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Garco10.DataAccess.CTL">
+      <HintPath>..\..\File DLL\Garco10.DataAccess.CTL.dll</HintPath>
+    </Reference>
+    <Reference Include="Garco10.DataAccess.HRM">
+      <HintPath>..\..\File DLL\Garco10.DataAccess.HRM.dll</HintPath>
+    </Reference>
+    <Reference Include="Garco10.DataAccess.System">
+      <HintPath>..\..\File DLL\Garco10.DataAccess.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Garco10.SystemModule">
+      <HintPath>..\..\File DLL\Garco10.SystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSCM.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\File DLL\VSCM.Base.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="NghiepVu\frmQuanLyCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmQuanLyCaNhan.Designer.cs">
+      <DependentUpon>frmQuanLyCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmDoiKeHoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmDoiKeHoach.Designer.cs">
+      <DependentUpon>frmDoiKeHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmTrangCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmTrangCaNhan.designer.cs">
+      <DependentUpon>frmTrangCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmDM_DonVi_KetQua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmDM_DonVi_KetQua.designer.cs">
+      <DependentUpon>frmDM_DonVi_KetQua.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmDM_LoaiCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmDM_LoaiCongViec.designer.cs">
+      <DependentUpon>frmDM_LoaiCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmLoaiCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmLoaiCongViec.designer.cs">
+      <DependentUpon>frmLoaiCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmChonNhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmChonNhanSu.designer.cs">
+      <DependentUpon>frmChonNhanSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_LoaiCongViec_Old2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_LoaiCongViec_Old2.designer.cs">
+      <DependentUpon>frmDM_LoaiCongViec_Old2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmDM_LoaiCongViec_Old.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmDM_LoaiCongViec_Old.designer.cs">
+      <DependentUpon>frmDM_LoaiCongViec_Old.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_NgayNghiLe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmDM_NgayNghiLe.designer.cs">
+      <DependentUpon>frmDM_NgayNghiLe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhom.designer.cs">
+      <DependentUpon>frmNhom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhom_Ban.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmNhom_Ban.designer.cs">
+      <DependentUpon>frmNhom_Ban.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmPhanCapChucVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmPhanCapChucVu.designer.cs">
+      <DependentUpon>frmPhanCapChucVu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmPhanCapDonVi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmPhanCapDonVi.designer.cs">
+      <DependentUpon>frmPhanCapDonVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmPhanCap_DonVi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmPhanCap_DonVi.Designer.cs">
+      <DependentUpon>frmPhanCap_DonVi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmQL_PhanCapNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmQL_PhanCapNhanVien.Designer.cs">
+      <DependentUpon>frmQL_PhanCapNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frm_CoCauToChuc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frm_CoCauToChuc.designer.cs">
+      <DependentUpon>frm_CoCauToChuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\frmTaiLieu_VanBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\frmTaiLieu_VanBan.Designer.cs">
+      <DependentUpon>frmTaiLieu_VanBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain_QLCV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain_QLCV.designer.cs">
+      <DependentUpon>frmMain_QLCV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmThongBao_NhacViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmThongBao_NhacViec.Designer.cs">
+      <DependentUpon>frmThongBao_NhacViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmTongHopBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmTongHopBaoCao.Designer.cs">
+      <DependentUpon>frmTongHopBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmCongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmCongViec.designer.cs">
+      <DependentUpon>frmCongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmSoTayHarvard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmSoTayHarvard.Designer.cs">
+      <DependentUpon>frmSoTayHarvard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmTaoThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmTaoThongBao.Designer.cs">
+      <DependentUpon>frmTaoThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmTrangCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmTrangCaNhan.Designer.cs">
+      <DependentUpon>frmTrangCaNhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmCanhBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmCanhBao.Designer.cs">
+      <DependentUpon>frmCanhBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmDS_CongViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmDS_CongViec.Designer.cs">
+      <DependentUpon>frmDS_CongViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmCongViec_LichSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmCongViec_LichSu.Designer.cs">
+      <DependentUpon>frmCongViec_LichSu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trash\frmCongViec_LichSu_ChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trash\frmCongViec_LichSu_ChiTiet.Designer.cs">
+      <DependentUpon>frmCongViec_LichSu_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmLapLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmLapLich.Designer.cs">
+      <DependentUpon>frmLapLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmLich.Designer.cs">
+      <DependentUpon>frmLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmQuanLyTienDo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmQuanLyTienDo.Designer.cs">
+      <DependentUpon>frmQuanLyTienDo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmThongBao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmThongBao.Designer.cs">
+      <DependentUpon>frmThongBao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmTaiLieuUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmTaiLieuUpload.designer.cs">
+      <DependentUpon>frmTaiLieuUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NghiepVu\frmTaiLieuUploadFileShow_ChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NghiepVu\frmTaiLieuUploadFileShow_ChiTiet.designer.cs">
+      <DependentUpon>frmTaiLieuUploadFileShow_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TienIch\frmUploadFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TienIch\frmUploadFile.designer.cs">
+      <DependentUpon>frmUploadFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TienIch\frmUploadFileShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TienIch\frmUploadFileShow.designer.cs">
+      <DependentUpon>frmUploadFileShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TienIch\frmUploadFileShow_ChiTiet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TienIch\frmUploadFileShow_ChiTiet.designer.cs">
+      <DependentUpon>frmUploadFileShow_ChiTiet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="NghiepVu\frmQuanLyCaNhan.resx">
+      <DependentUpon>frmQuanLyCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmDoiKeHoach.resx">
+      <DependentUpon>frmDoiKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmTrangCaNhan.resx">
+      <DependentUpon>frmTrangCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmDM_DonVi_KetQua.resx">
+      <DependentUpon>frmDM_DonVi_KetQua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmDM_LoaiCongViec.resx">
+      <DependentUpon>frmDM_LoaiCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmLoaiCongViec.resx">
+      <DependentUpon>frmLoaiCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmChonNhanSu.resx">
+      <DependentUpon>frmChonNhanSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmDM_LoaiCongViec_Old2.resx">
+      <DependentUpon>frmDM_LoaiCongViec_Old2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmDM_LoaiCongViec_Old.resx">
+      <DependentUpon>frmDM_LoaiCongViec_Old.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmDM_NgayNghiLe.resx">
+      <DependentUpon>frmDM_NgayNghiLe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmNhom.resx">
+      <DependentUpon>frmNhom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmNhom_Ban.resx">
+      <DependentUpon>frmNhom_Ban.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmPhanCapChucVu.resx">
+      <DependentUpon>frmPhanCapChucVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmPhanCapDonVi.resx">
+      <DependentUpon>frmPhanCapDonVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmPhanCap_DonVi.resx">
+      <DependentUpon>frmPhanCap_DonVi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmQL_PhanCapNhanVien.resx">
+      <DependentUpon>frmQL_PhanCapNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frm_CoCauToChuc.resx">
+      <DependentUpon>frm_CoCauToChuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\frmTaiLieu_VanBan.resx">
+      <DependentUpon>frmTaiLieu_VanBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain_QLCV.resx">
+      <DependentUpon>frmMain_QLCV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmThongBao_NhacViec.resx">
+      <DependentUpon>frmThongBao_NhacViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmTongHopBaoCao.resx">
+      <DependentUpon>frmTongHopBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmCongViec.resx">
+      <DependentUpon>frmCongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmSoTayHarvard.resx">
+      <DependentUpon>frmSoTayHarvard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmTaoThongBao.resx">
+      <DependentUpon>frmTaoThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmTrangCaNhan.resx">
+      <DependentUpon>frmTrangCaNhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmCanhBao.resx">
+      <DependentUpon>frmCanhBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmDS_CongViec.resx">
+      <DependentUpon>frmDS_CongViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmCongViec_LichSu.resx">
+      <DependentUpon>frmCongViec_LichSu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trash\frmCongViec_LichSu_ChiTiet.resx">
+      <DependentUpon>frmCongViec_LichSu_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmLapLich.resx">
+      <DependentUpon>frmLapLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmLich.resx">
+      <DependentUpon>frmLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmQuanLyTienDo.resx">
+      <DependentUpon>frmQuanLyTienDo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmThongBao.resx">
+      <DependentUpon>frmThongBao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmTaiLieuUpload.resx">
+      <DependentUpon>frmTaiLieuUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NghiepVu\frmTaiLieuUploadFileShow_ChiTiet.resx">
+      <DependentUpon>frmTaiLieuUploadFileShow_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TienIch\frmUploadFile.resx">
+      <DependentUpon>frmUploadFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TienIch\frmUploadFileShow.resx">
+      <DependentUpon>frmUploadFileShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TienIch\frmUploadFileShow_ChiTiet.resx">
+      <DependentUpon>frmUploadFileShow_ChiTiet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="bin\Debug\Garco10.Presenter.QLCV.vshost.exe.config" />
+    <None Include="bin\Debug\Garco10.Presenter.QLCV.vshost.exe.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Garco10.DataAccess.QLCV\Garco10.DataAccess.QLCV.csproj">
+      <Project>{16869DF2-80E9-4315-853B-1D53828496AF}</Project>
+      <Name>Garco10.DataAccess.QLCV</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Abort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Nha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_ThongTinChung.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_TienDo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_Upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ico_UploadImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_gantt_chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vscm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Garco10.Presenter.QLCV.vshost.exe" />
+    <None Include="Resources\LapLai.png" />
+    <None Include="Resources\notebook.png" />
+    <None Include="Resources\NgayNghi.png" />
+    <None Include="Resources\read.png" />
+    <None Include="Resources\test.png" />
+    <None Include="Resources\list.png" />
+    <None Include="Resources\notifications-icon.png" />
+    <None Include="Resources\ico_Red_Arrow.png" />
+    <None Include="Resources\history-clock-button.png" />
+    <None Include="Resources\ico_Blue_Arrow.png" />
+    <None Include="Resources\checklist.png" />
+    <None Include="Resources\collapse.png" />
+    <None Include="Resources\expand.png" />
+    <None Include="Resources\employee.png" />
+    <Content Include="Resources\ico_Logo.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
